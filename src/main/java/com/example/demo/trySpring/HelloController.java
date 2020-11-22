@@ -28,13 +28,13 @@ public class HelloController {
 
 	@GetMapping("/hello") //localhost:8080/helloへのgetリクエストに対する処理を行う
 	public String getHello() {
-		return "hello"; //拡張子なしのhtmlファイル名を指定する：resources/templatesからのパス
+		return "trySpring/hello"; //拡張子なしのhtmlファイル名を指定する：resources/templatesからのパス
 	}
 
 	@PostMapping("/hello")
 	public String postRequest(@RequestParam("testText1") String str, Model model) {
 		model.addAttribute("sample", str); //sampleというキーで、引数のstrをセット：modelに登録
-		return "helloResponse";
+		return "trySpring/helloResponse";
 	}
 
 
@@ -59,6 +59,6 @@ public class HelloController {
 		model.addAttribute("name", employee.getEmployeeName());
 		model.addAttribute("age", employee.getAge());
 
-		return "helloResponseDB";
+		return "trySpring/helloResponseDB";
 	}
 }
