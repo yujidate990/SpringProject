@@ -7,7 +7,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 /**
- * ④：dbへのCRUDを行い
+ * ④：dbへのCRUDを行い<br>
  * ⑤：結果を返却するクラス
  * @author datey
  */
